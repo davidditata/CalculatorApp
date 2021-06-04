@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+
+    <title>Calculator App</title>
+</head>
+<center>
+<body>
+        <form name="calculator">
+        <table border="2" cellpadding="4" cellspacing="3" bordercolor="blue" cell>
+            <tr>
+                <td>
+                    <table border="4" cellpadding="4" cellspacing=35" width="100%" bordercolor="red" cell>
+                        <!-- row 1 -->
+                        <tr>
+                            <td colspan="10">
+                                <input type="text" name="calcResults" value="0" size="51" style="text-align: center">
+                            </td>
+                        </tr>
+                        <!-- row 2 -->
+                        <tr>
+                            <td><input class="calcBtn" type="button" value=" C " name="calclear"
+                                    onclick="gCalculator.OnClick('c')"></td>
+                            <td></td>
+                            <td></td>
+                            <td><input class="calcBtn" type="button" value=" - " name="calminus"
+                                onclick="gCalculator.OnClick('-')"></td>
+                        </tr>
+                        <!-- row 3 -->
+                        <tr>
+                            <td><input class="calcBtn" type="button" value=" 7 " name="cal7"
+                                    onclick="gCalculator.OnClick('7')" ></td>
+                            <td><input class="calcBtn" type="button" value=" 8 " name="cal8"
+                                    onclick="gCalculator.OnClick('8')" > </td>
+                            <td><input class="calcBtn" type="button" value=" 9 " name="cal9"
+                                    onclick="gCalculator.OnClick('9')" > </td>
+                            <td><input class="calcBtn" type="button" value=" ÷ " name="caldiv"
+                                    onclick="gCalculator.OnClick('/')"></td>
+                        </tr>
+                        <!-- row 4 -->
+                        <tr>
+                            <td><input class="calcBtn" type="button" value=" 4 " name="cal4"
+                                    onclick="gCalculator.OnClick('4')" > </td>
+                            <td><input class="calcBtn" type="button" value=" 5 " name="cal5"
+                                    onclick="gCalculator.OnClick('5')" > </td>
+                            <td><input class="calcBtn" type="button" value=" 6 " name="cal6"
+                                    onclick="gCalculator.OnClick('6')" > </td>
+                            <td><input class="calcBtn" type="button" value=" x " name="calmul"
+                                    onclick="gCalculator.OnClick('*')"></td>
+                        </tr>
+                        <tr>
+                            <td><input class="calcBtn" type="button" value=" 1 " name="cal1"
+                                    onclick="gCalculator.OnClick('1')" > </td>
+                            <td><input class="calcBtn" type="button" value=" 2 " name="cal2"
+                                    onclick="gCalculator.OnClick('2')" > </td>
+                            <td><input class="calcBtn" type="button" value=" 3 " name="cal3"
+                                    onclick="gCalculator.OnClick('3')"> </td>
+                            <td><input class="calcBtn" type="button" value=" + " name="calplus"
+                                    onclick="gCalculator.OnClick('+')"></td>
+                        </tr>
+                        <tr>
+                            <td> </td>
+                            <td><input class="calcBtn" type="button" value=" 0 " name="cal0"
+                                    onclick="gCalculator.OnClick('0')" > </td>
+                            <td><input class="calcBtn" type="button" value=" . " name="caldec"
+                                    onclick="gCalculator.OnClick('.')"></td>
+                                    <td><input class="calcBtn" type="button" value=" = " name="calequal"
+                                        onclick="gCalculator.OnClick('=')"></td>
+                          
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </form>
+
+</body>
+</html>
+</center>
